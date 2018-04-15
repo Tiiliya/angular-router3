@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common'
+@Component({
+  selector: 'app-a',
+  templateUrl: './a.component.html',
+  styleUrls: ['./a.component.css']
+})
+export class AComponent implements OnInit {
+
+  constructor(
+    private location: Location
+  ) { }
+
+  ngOnInit() {
+  }
+  goback(){
+    this.location.back()
+  }
+
+}
